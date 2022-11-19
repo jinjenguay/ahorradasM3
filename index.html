@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bulma CDN -->
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item is-size-3 ml-4" href="#">
+            <i class="fa-solid fa-wallet mr-2"></i>
+            AhorrADAs
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-size-5">
+              Balance
+            </a>
+      
+            <a class="navbar-item is-size-5">
+              Categorías
+            </a>
+
+            <a class="navbar-item is-size-5">
+                Reportes
+            </a>
+           </div>
+          </div>
+        </div>
+      </nav>
+      <main class="columns has-background-white-ter is-flex is-justify-content-center">
+          <section class="section column is-one-quarter ">
+            <div class="column">
+                <div class="box">
+                  <h2 class="title is-2">Balance</h2>
+                  <div class="container">
+                    <p class="subtitle is-6">Ganancias</p>
+                    <p class="subtitle is-6">Gastos</p>
+                    <p class="subtitle is-5">Total</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="box is-flex is-flex-direction-column">
+                  <h2 class="title is-2">Filtros</h2>
+                  <input class="button is-ghost" type="reset" value="Ocultar filtros">
+                  <div class="container">
+                    <p class="subtitle-6">Tipo</p>
+                    <select class="" id="">
+                      <option value="unset">Todos</option>
+                      <option value="gasto">Gasto</option>
+                      <option value="darken">Ganancia</option>
+                    </select>
+                  </div>
+                  <div class="container">
+                    <p class="subtitle-6">Categoría</p>
+                    <select class="" id="">
+                      <option value="unset">Todas</option>
+                      <option value="comida">Comida</option>
+                      <option value="gasto">Salida</option>
+                      <option value="servicios">Servicios</option>
+                      <option value="educacion">Educación</option>
+                      <option value="transporte">Transporte</option>
+                      <option value="trabajo">Trabajo</option>
+                    </select>
+                  </div>
+                  <div class="container">
+                    <p class="subtitle-6">Desde</p>
+                    <input type="date" name="" id="">
+                  </div>
+                  <div class="container">
+                    <p class="subtitle-6">Ordenar por</p>
+                    <select class="" id="">
+                      <option value="unset">Más reciente</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="section">
+            <div class="column is-">
+                <div class="container">
+                    <div class="box is-flex">
+                        <h2 class="title is-2">Operaciones</h2>
+                        <button class="button is-primary">+ Nueva operación</button>
+                    </div>
+                </div>
+              </div>
+          </section>
+      </main>
+</body>
+</html>
